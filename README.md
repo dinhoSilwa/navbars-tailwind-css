@@ -1,6 +1,8 @@
 # Nav-bar-ui-01
 ![image](https://github.com/dinhoSilwa/navbars-tailwind-css/assets/143217996/1fb6cf78-ef6d-47f0-af1b-aaf4f028ac0f)
 
+https://dinhosilwa.github.io/navbars-tailwind-css/
+
 
 Este projeto consiste em uma página HTML com uma barra de navegação, apresentando um design responsivo. A barra de navegação inclui um logotipo, links de navegação e um botão de alternância para dispositivos móveis. O estilo é implementado usando o Tailwind CSS e os ícones do Tabler.
 
