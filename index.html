@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <title>Nav-bar-ui-01</title>
+</head>
+<body>
+
+<nav class="flex justify-between items-center w-screen h-20 shadow-md ">
+    <div class="font-bold flex items-center ml-8 text-2xl">LOGO</div>
+    <ul class=" hidden menu-mobile md:space-x-8 absolute md:relative md:flex md:top-0 md:flex-row md:space-y-0 md:p-0 md:w-10 top-20 flex flex-col items-center justify-center w-full md:w-auto p-12 pb-12  md:p-6 space-y-12 ">
+     <li class="font-semibold hover:text-gray-600 cursor-pointer">link01</li>
+     <li class="font-semibold hover:text-gray-600 cursor-pointer">link02</li>
+     <li class="font-semibold hover:text-gray-600 cursor-pointer">link03</li>
+     <li class="font-semibold hover:text-gray-600 cursor-pointer">link04</li>
+     
+     <button class="font-semibold md:p-2 md:bg-gray-800 md:text-white md:p-4 md:w-36 ">button</button>
+    </ul>
+    <div class="font-bold flex items-center mr-8 md:hidden menuToggle"><i class="ti ti-menu-deep cursor-pointer font-semibold text-lg p-4 text-3xl	"></i></div>
+</nav>
+
+
+<a href="https://github.com/dinhoSilwa?tab=repositories" style="position: absolute; bottom:0;" class="text-gray-200">Criado por Claudio silva</a>
+</body>
+
+<script>
+
+const menuToggle = document.querySelector(".menuToggle")
+const navigationmobile = document.querySelector(".menu-mobile")
+const iconeMenu = document.querySelector(".ti");
+
+menuToggle.addEventListener("click", handlemenu)
+
+function handlemenu(e){
+ const iconMenu = e.target
+
+if(iconMenu.classList[1] === "ti-menu-deep"){
+iconMenu.classList.replace(`${iconMenu.classList[1]}`, "ti-x")
+navigationmobile.classList.toggle("hidden")
+navigationmobile.classList.toggle("bg-gray-300")
+
+}else{
+ iconMenu.classList.replace(`${iconMenu.classList[1]}`, "ti-menu-deep")
+ navigationmobile.classList.toggle("hidden")
+}
+
+}
+
+
+</script>
+</html>
